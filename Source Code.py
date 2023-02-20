@@ -62,6 +62,6 @@ if __name__ == '__main__':
                 print("Symbol: {}, Signal: {}, RSI: {:.2f}".format(symbol, signal, data['RSI'].iloc[-1]))
             else:
               print("Unable to retrieve data for symbol: {}".format(symbol))
-        print(counter,' Iteration finished at ',time.strftime("%H:%M:%S", time.localtime()),'\n')
+        print(counter,' Iteration(s) finished at ',time.strftime("%H:%M:%S", time.localtime()),'\n')
         counter = counter + 1
         time.sleep(900)
